@@ -2,20 +2,8 @@ package DataStructursAndAlgorithms.patterns;
 
 import java.util.Scanner;
 
-
-/*
- pattern to print
-
- * 
- **
- ***
- ****
-
-
-*/
-
-public class StarPattern {
-    public static void main(String[] args) {
+public class InvertedStarPattern {
+     public static void main(String[] args) {
         
         Scanner in=new Scanner(System.in);
         int lines;
@@ -26,7 +14,7 @@ public class StarPattern {
 
     public static void  printStarPatten(int n){
       for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= i; j++) {
+        for (int j = 1; j <= n; j--) {
             System.out.print("*");
         }
         System.out.println();

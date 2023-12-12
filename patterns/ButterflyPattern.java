@@ -2,12 +2,12 @@ package DataStructursAndAlgorithms.patterns;
 
 /*
 
-     ******
-    ******
-   ******
-  ******
- ******
-******
+ *         *   
+ * *     * *
+ * * * * * *
+ * * * * * *
+ * *     * *
+ *         *
  
 */
 import java.util.Scanner;
@@ -23,20 +23,37 @@ public class ButterflyPattern {
     }
 
     public static void  printPatten(int n){
-      
-      for (int i =1; i <= n; i++) {
-        for (int j = 1; j <=2*n; j++) {
+      for (int i = 1; i <= n/2; i++) {
+        for (int j = 1; j <= n; j++) {
 
-            if(i+j>n && i+j<=2*n){
-                System.out.print("*");
-              }
-              else{
-                  System.out.print(" ");
-              }
+            if (j<=i || i+j>n) {
+            System.out.print("*");
+                
+            }
+            else
+            {
+                System.out.print(" ");
+            }
             
         }
         System.out.println();
       }
+      for (int i = n/2; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+
+            if (j>i || i+j<=n) {
+            System.out.print("*");
+                
+            }
+            else
+            {
+                System.out.print(" ");
+            }
+            
+        }
+        System.out.println();
+      }
+      
     }
     
 }

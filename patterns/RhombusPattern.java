@@ -1,6 +1,16 @@
 package DataStructursAndAlgorithms.patterns;
 
 import java.util.Scanner;
+/*
+      ******* 
+     *******  
+    *******   
+   *******    
+  *******
+ *******
+*******
+
+*/
 
 public class RhombusPattern {
     public static void main(String[] args) {
@@ -13,10 +23,16 @@ public class RhombusPattern {
     }
 
     public static void  printPatten(int n){
-      for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= (2*n)-1; j++) {
-            
-                System.out.print(((i+j)%2==0)?"1":"0");
+      
+      for (int i =1; i <= n; i++) {
+        for (int j = 1; j <=2*n; j++) {
+
+            if(i+j>n && i+j<=2*n){
+                System.out.print("*");
+              }
+              else{
+                  System.out.print(" ");
+              }
             
         }
         System.out.println();

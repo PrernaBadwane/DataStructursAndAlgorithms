@@ -1,6 +1,4 @@
 package DataStructursAndAlgorithms.patterns;
-
-import java.util.Scanner;
 /*
 pattern to perint
  1
@@ -11,10 +9,14 @@ pattern to perint
  123456
  */
 
-public class halfPerymidpattern {
+import java.util.Scanner;
+
+public class HalfPyramidPattern {
+    
+
     public static void main(String[] args) {
         
-        Scanner in=new Scanner(System.in);
+        Scanner in =new Scanner(System.in);
         int lines;
         System.out.println("enter number of lines : ");
         lines=in.nextInt();
@@ -30,3 +32,5 @@ public class halfPerymidpattern {
       }
     }
 }
+
+
